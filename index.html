@@ -10,6 +10,10 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 
     <style>
+        body {
+            background: url("images/gravel.png");
+        }
+
         .navbar-brand {
             font-family: 'Georgia', Times, Times New Roman, serif;
             background: #4aaaa5;
@@ -36,31 +40,48 @@
             margin-top: 20px;
         }
 
+        .links {
+            float: right;
+        }
+
+        .container {
+            margin: 0 auto;
+            width: 70%;
+            background: white;
+            
+        }
+        
+        .container:not(#app) {
+            min-height: 81vh;
+        }
+
         footer {
-            color: lightgrey;
-            background: #666666;
+            padding: 30px 0;
+            clear: both;
+            font-size: 12px;
+            color: #ffffff;
+            color: #cccccc;
             text-align: center;
-            border-top: 7px #4aaaa5 solid;
-            padding: 32px;
+            background: #666666;
+            border-top: 8px solid #4aaaa5;
+            height: 50px;
         }
     </style>
 
 </head>
 
 <body>
-    <!-- Navbar -->
 
-    
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Daniel Douglas</a>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="nav navbar-nav navbar-right">
-                <li><a class="nav-item nav-link" href="#">About</a></li>
-                <li><a class="nav-item nav-link" href="portfolio.html">Portfolio</a></li>
-                <li><a class="nav-item nav-link" href="contact.html">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
+    <div id="app" class="container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">Daniel Douglas</a>
+            <div class="nav navbar-nav ml-auto">
+                <a class="nav-item nav-link" href="#">About</a>
+                <a class="nav-item nav-link" href="portfolio.html">Portfolio</a>
+                <a class="nav-item nav-link" href="contact.html">Contact</a>
+            </div>
+        </nav>
+    </div>
 
     <div class="container">
 
@@ -91,9 +112,9 @@
     </div>
 
 
-    <!-- <footer>
+    <footer>
         Copyright ©
-    </footer> -->
+    </footer>
 
 
 

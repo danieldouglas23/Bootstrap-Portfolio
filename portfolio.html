@@ -10,6 +10,10 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 
     <style>
+        body {
+            background: url("images/gravel.png");
+        }
+
         .navbar-brand {
             font-family: 'Georgia', Times, Times New Roman, serif;
             background: #4aaaa5;
@@ -28,7 +32,53 @@
         }
 
         .middle {
-            margin: 25px 0;
+            width: 274px;
+            margin: 20px 0 25px;
+        }
+
+        .firstrowpic {
+            width: 274px;
+            margin: 20px 0 25px;
+        }
+
+        .third {
+            width: 274px;
+            margin: 20px 0 25px;
+        }
+
+        h3 {
+            bottom: 20px;
+            width: 100%;
+            padding: 15px;
+            margin-bottom: 5px;
+            font-weight: 300;
+            line-height: 30px;
+            color: #ffffff;
+            text-align: center;
+            background: #4aaaa5;
+            border-bottom: 0;
+        }
+
+        .container {
+            margin: 0 auto;
+            width: 70%;
+            background: white;
+        }
+
+        .container:not(#app) {
+            min-height: 81vh;
+        }
+
+        footer {
+            padding: 30px 0;
+            clear: both;
+            font-size: 12px;
+            color: #ffffff;
+            color: #cccccc;
+            text-align: center;
+            background: #666666;
+            border-top: 8px solid #4aaaa5;
+            height: 50px;
         }
     </style>
 
@@ -36,15 +86,16 @@
 
 <body>
 
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Daniel Douglas</a>
-        <div class="navbar-nav">
-            <a class="nav-item nav-link" href="index.html">About</a>
-            <a class="nav-item nav-link" href="#">Portfolio</a>
-            <a class="nav-item nav-link" href="contact.html">Contact</a>
-        </div>
-    </nav>
+    <div id="app" class="container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">Daniel Douglas</a>
+            <div class="nav navbar-nav ml-auto">
+                <a class="nav-item nav-link" href="index.html">About</a>
+                <a class="nav-item nav-link" href="#">Portfolio</a>
+                <a class="nav-item nav-link" href="contact.html">Contact</a>
+            </div>
+        </nav>
+    </div>
 
     <div class="container">
 
@@ -58,40 +109,36 @@
 
         <div class="row">
             <div class="col-md-4">
-                <img class="" src="http://placehold.it/200x150" alt="">
+                <img class="firstrowpic" src="images/technics-q-c-640-480-1.jpg" alt="Word Guess">
+                <h3>Word Guess</h3>
             </div>
             <div class="col-md-4">
-                <img class="" src="http://placehold.it/200x150" alt="">
-            </div>
-        </div>
-        <div class="row">
-            <div class="middle">
-                <div class="col-md-4">
-                    <img class="" src="http://placehold.it/200x150" alt="">
-                </div>
-                <div class="col-md-4">
-                    <img class="" src="http://placehold.it/200x150" alt="">
-                </div>
+                <img class="firstrowpic" src="images/technics-q-c-640-480-2.jpg" alt="RPG Game">
+                <h3>RPG Game</h3>
             </div>
         </div>
         <div class="row">
             <div class="col-md-4">
-                <img class="" src="http://placehold.it/200x150" alt="">
+                <img class="middle" src="images/technics-q-c-640-480-5.jpg" alt="Trivia Game">
+                <h3>Trivia Game</h3>
+            </div>
+            <div class="col-md-4">
+                <img class="middle" src="images/technics-q-c-640-480-7.jpg" alt="Rutgers Info Widget">
+                <h3>Rutgers Info Widget</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <img class="third" src="images/technics-q-c-640-480-9.jpg" alt="Rock Paper Scissors">
+                <h3>Rock Paper Scissors</h3>
             </div>
         </div>
 
     </div>
 
-
-    <!-- <footer>
+    <footer>
         Copyright ©
-    </footer> -->
-
-
-
-
-
-
+    </footer>
 
 </body>
 
